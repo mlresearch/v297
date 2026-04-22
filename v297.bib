@@ -572,3 +572,26 @@
   software = {https://github.com/JHU-CLSP/MedExpert},
   pages = {}
 }
+
+@InProceedings{afolabi25,
+  title = {Faithful or Just Plausible? Evaluating the Faithfulness of Closed-Source {LLM}s in Medical Reasoning},
+  author = {Afolabi, Halimat and Afolabi, Zainab and Friel, Elizabeth and Roberts, Jude and Ji-Xu, Antonio and Chen, Lloyd and Ogbomo, Egheosa and Imevbore, Emiliomo and Eneje, Phil and El Ouahidi, Wissal and Sohal, Aaron and Kennan, Alisa and Srivastava, Shreya and Vairavan, Anirudh and Napitu, Laura and McClure, Katie},
+  abstract = {Closed-source large language models ({LLM}s), such as ChatGPT and Gemini, are increasingly consulted for medical advice, yet their explanations may appear plausible while failing to reflect the model's underlying reasoning process. This gap poses serious risks as patients and clinicians may trust coherent but misleading explanations. We conduct a systematic black-box evaluation of faithfulness in medical reasoning among three widely used closed-source {LLM}s. Our study consists of three perturbation-based probes: (1) causal ablation, testing whether stated chain-of-thought ({CoT}) reasoning causally influences predictions; (2) positional bias, examining whether models create post-hoc justifications for answers driven by input positioning; and (3) hint injection, testing susceptibility to external suggestions. We complement these quantitative probes with a small-scale human evaluation of model responses to patient-style medical queries to examine concordance between physician assessments of explanation faithfulness and layperson perceptions of trustworthiness. We find that {CoT} reasoning steps often do not causally drive predictions, and models readily incorporate external hints without acknowledgment. In contrast, positional biases showed minimal impact in this setting. These results underscore that faithfulness, not just accuracy, must be central in evaluating {LLM}s for medicine, to ensure both public protection and safe clinical deployment.},
+  pages = {}
+}
+
+@InProceedings{luo25,
+  title = {The {CRITICAL} Records Integrated Standardization Pipeline ({CRISP}): End-to-End Processing of Large-scale Multi-institutional {OMOP} {CDM} Data},
+  author = {Luo, Xiaolong and Li, Michael Lingzhi},
+  abstract = {Large-scale critical care datasets have driven major progress in clinical {AI}, yet most remain limited to single institutions. The newly released {CRITICAL} dataset expands this scope, linking 1.95 billion records from 371,365 patients across four {CTSA} sites and capturing longitudinal patient journeys from pre-{ICU} to post-{ICU} care. Its scale and diversity enable more generalizable modeling but introduce significant challenges in data cleaning, vocabulary harmonization, and computational efficiency. We introduce {CRISP} ({CRITICAL} Records Integrated Standardization Pipeline), a scalable framework that transforms the raw {CRITICAL} resource into machine-learning--ready form. {CRISP} performs systematic data validation, cross-vocabulary mapping, and unit standardization while maintaining full auditability. Through parallelized optimization, it processes the entire dataset in under a day on standard computing hardware. The pipeline also provides reproducible baselines across multiple clinical prediction tasks, substantially reducing data preparation time and enabling consistent, multi-institutional evaluation. All code, documentation, and benchmarks are publicly available to support transparent and scalable clinical {AI} research.},
+  software = {https://github.com/AaronLuo00/CRISP-Pipeline},
+  pages = {}
+}
+
+@InProceedings{ankireddy25,
+  title = {{ClinPath}: A General-Purpose Knowledge Graph with {LLM} Reasoning For Understanding Clinical Interactions},
+  author = {Ankireddy, Sahithi and Sehgal, Purvi and Wierman, Adam},
+  abstract = {We present ClinPath, a holistic multimodal framework that combines knowledge graph modeling with large language model ({LLM}) reasoning to comprehensively represent and analyze longitudinal patient clinical journeys. Built on the {MIMIC-IV} database, ClinPath introduces ClinKG, a large-scale clinical knowledge graph that integrates diagnoses, symptoms, medications, procedures, demographics, and provider interactions into a unified representation of patient care. Unlike prior work that constructs narrow, diagnosis-centered graphs, ClinKG captures the full spectrum of patient--provider interactions across time and care settings. The {LLM} reasoning layer demonstrates ClinPath's versatility through two key applications: (1) patient similarity analysis, where this pipeline significantly improved performance on our custom benchmark, ClinPath-SimBench, and (2) provider behavior analysis, a novel downstream task. Together, these results illustrate how combining graph-structured representations with {LLM}-based reasoning yields clinically meaningful, multi-perspective insights.},
+  software = {https://github.com/sahithiankireddy14/ClinPath},
+  pages = {}
+}
