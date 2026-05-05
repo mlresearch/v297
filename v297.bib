@@ -9,7 +9,8 @@
   end = {2025-12-14},
   address = {The Westin San Diego Gaslamp Quarter, San Diego, CA, USA},
   conference_url = {https://ahli.cc/ml4h/},
-  conference_number = {5}
+  conference_number = {5},
+  published = {2026-05-05}
 }
 
 @InProceedings{mandyam25,
@@ -197,7 +198,7 @@
 @InProceedings{nonaka25,
   title = {Boosting Phonocardiogram Classification Performance with Function Generated Data},
   author = {Nonaka, Naoki and Seki, Hiroshi and Komatsu, Tomohiro and Seita, Jun},
-  abstract = {Deep neural networks require large datasets, yet medical phonocardiogram ({PCG}) data are scarce due to privacy and disease rarity. To address this challenge in {PCG} analysis, we present a function-generated {PCG} pipeline that synthesizes {S1}/{S2} heart sounds with modulated noise to emulate aortic stenosis ({AS}), aortic regurgitation ({AR}), and mitral regurgitation ({MR}). Across eight architectures, we compare real-only training, synthetic-only, and synthetic pretraining followed by real fine-tuning ({Syn}$\\to${Real}). {Syn}$\\to${Real} consistently improves {AUROC} with average gains of +15.3\% ({AS}), +17.0\% ({AR}), +17.1\% ({MR}) on {BMD-HS}, and +7.1\%, +8.8\%, +6.1\% on a private cohort (8,564 recordings). Furthermore, we show {Syn}$\\to${Real} is competitive with pretraining on out-of-domain real data, and combining it with multi-stage real fine-tuning yields the best overall performance, highlighting the complementary value of synthetic and real {PCG}s. While synthetic-only training generalizes poorly, pretraining on function-generated {PCG}s consistently improves {PCG} classification over training from scratch, offering a practical path to mitigate data-collection burdens and potentially reduce privacy and ethical exposure.},
+  abstract = {Deep neural networks require large datasets, yet medical phonocardiogram ({PCG}) data are scarce due to privacy and disease rarity. To address this challenge in {PCG} analysis, we present a function-generated {PCG} pipeline that synthesizes {S1}/{S2} heart sounds with modulated noise to emulate aortic stenosis ({AS}), aortic regurgitation ({AR}), and mitral regurgitation ({MR}). Across eight architectures, we compare real-only training, synthetic-only, and synthetic pretraining followed by real fine-tuning ({Syn}$\to${Real}). {Syn}$\to${Real} consistently improves {AUROC} with average gains of +15.3\% ({AS}), +17.0\% ({AR}), +17.1\% ({MR}) on {BMD-HS}, and +7.1\%, +8.8\%, +6.1\% on a private cohort (8,564 recordings). Furthermore, we show {Syn}$\to${Real} is competitive with pretraining on out-of-domain real data, and combining it with multi-stage real fine-tuning yields the best overall performance, highlighting the complementary value of synthetic and real {PCG}s. While synthetic-only training generalizes poorly, pretraining on function-generated {PCG}s consistently improves {PCG} classification over training from scratch, offering a practical path to mitigate data-collection burdens and potentially reduce privacy and ethical exposure.},
   software = {https://github.com/seitalab/SynPCG},
   pages = {473--524}
 }
@@ -212,7 +213,7 @@
 
 @InProceedings{lillelund25,
   title = {{MENSA}: A Multi-Event Network for Survival Analysis with Trajectory-based Likelihood Estimation},
-  author = {Lillelund, Christian Marius and Gharari Foomani, Ali Hossein and Sun, Weijie and Qi, Shi-ang and Greiner, Russell and The Pooled Resource Open-Access ALS Clinical Trials Consortium ({PRO-ACT})},
+  author = {Lillelund, Christian Marius and Gharari Foomani, Ali Hossein and Sun, Weijie and Qi, Shi-ang and Greiner, Russell and {The Pooled Resource Open-Access ALS Clinical Trials Consortium ({PRO-ACT})}},
   abstract = {Most existing time-to-event methods focus on either single-event or competing-risks settings, leaving multi-event scenarios relatively underexplored. In many healthcare applications, for example, a patient may experience multiple clinical events, that can be non-exclusive and semi-competing. A common workaround is to train independent single-event models for such multi-event problems, but this approach fails to exploit dependencies and shared structures across events. To overcome these limitations, we propose {MENSA} (Multi-Event Network for Survival Analysis), a deep learning model that jointly learns flexible time-to-event distributions for multiple events, whether competing or co-occurring. In addition, we introduce a novel trajectory-based likelihood term that captures the temporal ordering between events. Across four multi-event datasets, {MENSA} improves predictive performance over many state-of-the-art baselines. Source code is available at https://github.com/thecml/mensa.},
   software = {https://github.com/thecml/mensa},
   pages = {543--571}
@@ -559,7 +560,7 @@
 
 @InProceedings{hao25a,
   title = {Joint Progression Modeling ({JPM}): A Probabilistic Framework for Mixed-Pathology Progression},
-  author = {Hao, Hongtao and Austerweil, Joseph L. and the Alzheimer's Disease Neuroimaging Initiative},
+  author = {Hao, Hongtao and Austerweil, Joseph L. and {the Alzheimer's Disease Neuroimaging Initiative}},
   abstract = {Event-based models ({EBM}s) infer disease progression from cross-sectional data, and standard {EBM}s assume a single underlying disease per individual. In contrast, mixed pathologies are common in neurodegeneration. We introduce the Joint Progression Model ({JPM}), a probabilistic framework that treats single-disease trajectories as partial rankings and builds a prior over joint progressions. We study several {JPM} variants (Pairwise, Bradley--Terry, Plackett--Luce, and Mallows) and analyze three properties: (i) calibration--whether lower model energy predicts smaller distance to the ground truth ordering; (ii) separation--the degree to which sampled rankings are distinguishable from random permutations; and (iii) sharpness--the stability of sampled aggregate rankings. All variants are calibrated, and all achieve near-perfect separation; sharpness varies by variant and is well-predicted by simple features of the input partial rankings (number and length of rankings, conflict, and overlap). In synthetic experiments, {JPM} improves ordering accuracy by roughly 21\% over a strong {EBM} baseline ({SA}-{EBM}) that treats the joint disease as a single condition. Finally, using {NACC}, we find that the Mallows variant of {JPM} and the baseline model ({SA}-{EBM}) have results that are more consistent with prior literature on the possible disease progression of the mixed pathology of {AD} and {VaD}.},
   software = {https://github.com/hongtaoh/jpm},
   pages = {1467--1515}
