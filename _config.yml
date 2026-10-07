@@ -3,7 +3,7 @@ booktitle: Proceedings of the Fifth Machine Learning for Health Symposium
 shortname: ML4H
 year: '2025'
 volume: '297'
-start: &1 2025-12-13
+start: 2025-12-13
 end: 2025-12-14
 conference_number: '5'
 published: 2026-05-05
@@ -108,7 +108,7 @@ conference:
   url: https://ahli.cc/ml4h/
   location: The Westin San Diego Gaslamp Quarter, San Diego, CA, USA
   dates:
-  - *1
+  - 2025-12-13
   - 2025-12-14
 analytics:
   google:
